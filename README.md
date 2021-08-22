@@ -19,8 +19,8 @@
 - [Project Results](#project-results)
     - [Added support for differentiating functor objects and lambda expressions.](#added-support-for-differentiating-functor-objects-and-lambda-expressions)
     - [Extend clad by adding support for differentiating more C++ syntax and constructs.](#extend-clad-by-adding-support-for-differentiating-more-c-syntax-and-constructs)
-    - [Made clad more robust by adding an automatic testing framework and fixing various existing issues.](made-clad-more-robust-by-adding-an-automatic-testing-framework-and-fixing-various-existing-issues)
-    - [Added support for building clad doxygen documentation.](added-support-for-building-clad-doxygen-documentation)
+    - [Made clad more robust by adding an automatic testing framework and fixing various existing issues.](#made-clad-more-robust-by-adding-an-automatic-testing-framework-and-fixing-various-existing-issues)
+    - [Added support for building clad Doxygen documentation.](#added-support-for-building-clad-doxygen-documentation)
 - [Contributions](#contributions)
     - [Pull requests](#pull-requests)
     - [Issues opened](#issues-opened)
@@ -301,7 +301,7 @@ I fixed the following issues:
 | [#277](https://github.com/vgvassilev/clad/issues/277)  | Derived variables of variables defined in loop are not reset to 0 at each iteration in reverse mode  |
 | [#292](https://github.com/vgvassilev/clad/issues/292)  | Gradient overloaded function does not do perfect forwarding for the `*this` object                   |
 
-### Added support for building clad doxygen documentation.
+### Added support for building clad Doxygen documentation.
 
 I modified Doxygen configuration file, added support for building clad Doxygen documentation using CMake and added configuration script
 for hosting the documentation on [readthedocs](https://readthedocs.org/).
