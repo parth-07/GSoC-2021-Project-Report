@@ -357,7 +357,7 @@ The whole list of issues created by me during the GSoC time period can be found 
 ## Conclusion
 
 I was able to complete almost all of the goals I stated in my GSoC proposal. I want to thank my mentors for helping me in making this possible. I will continue
-contributing to the project since it aligns well with my area of interest.
+contributing to the project since it aligns well with my area of interest and there's so many more interesting things that I want to implement in clad. 
 
 Overall, participating in Google Summer of Code was an amazing experience for me. I improved my knowledge of clang and llvm, learned a lot about open source culture, writing good quality codes and managing my time better.
 
