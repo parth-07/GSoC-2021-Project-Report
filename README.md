@@ -6,7 +6,7 @@
 
 **Student:** [Parth Arora](https://github.com/parth-07)
 
-**Organisation:** CERN-HSF
+**Organisation:** [CERN-HSF](https://hepsoftwarefoundation.org/)
 
 **Mentors:** [Vassil Vassilev](https://github.com/vgvassilev), [David Lange](https://github.com/davidlange6)
 
@@ -29,12 +29,29 @@
 
 ## Clad overview
 
-[Clad](https://github.com/vgvassilev/clad) is an automatic differentiation clang plugin for C++. It can differentiate mathematical functions represented as C++ functions.
+[Clad](https://github.com/vgvassilev/clad) is an automatic differentiation clang plugin for C++. It can differentiate mathematical functions represented as C++ functions. For each function that is to be differentiated, Clad creates another function that computes its derivative.
 
-Clad analyses the abstract syntax tree (AST) produced by the clang compiler to differentiate the functions using automatic differentiation.
-Automatic Differentiation (AD) avoids all the usual disadvantages of symbolic and numerical differentiation. 
+Clad analyses the abstract syntax tree (AST) produced by the clang compiler to differentiate the functions using automatic differentiation (AD). Automatic differentiation avoids all the usual disadvantages of symbolic and numerical differentiation. 
 
+Clad provides an interface to execute the differentiated function and obtain its source code. 
+A simple example to demonstrate clad usage:
 
+```c++
+double fn(double i, double j) {
+  return i*j;
+}
+
+int main() {
+  // Create a function that computes derivative of 'fn' w.r.t 'i'
+  auto d_fn = clad::differentiate(fn, "i");
+  
+  // Computes derivative of 'fn' w.r.t 'i' when (i, j) = (3, 4)
+  double res = d_fn.execute(3, 4);  // res is equal to 4
+  
+  // 'getCode' returns string representation of the generated derived function.
+  const char* derivative_code = d_fn.getCode();
+}
+```
 
 
 ## Project overview
