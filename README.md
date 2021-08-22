@@ -62,7 +62,7 @@ relevant in modern C++. This project adds support to differentiate functor objec
 This project also focusses on general improvements to clad by adding support for differentiating more statements and making clad more robust 
 by adding support for additional testing and fixing various existing bugs.
 
-All the contributions are done in project main repository: [Clad](https://github.com/vgvassilev/clad)
+All the contributions are made in the project main repository: [Clad](https://github.com/vgvassilev/clad)
 
 ## Project Deliverables
 - Add support for differentiating functor objects and lambdas in both forward and reverse mode automatic differentiation in clad.
@@ -314,6 +314,8 @@ Two new cmake flags were added for the purpose of creating documentation.
 Clad Doyxgen documentation can be found [here](https://clad.readthedocs.io/en/latest/index.html)
 
 ### Contributions
+
+All the contributions are made in the project main repository: [Clad](https://github.com/vgvassilev/clad)
 
 #### Pull requests
 
